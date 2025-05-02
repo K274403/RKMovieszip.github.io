@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My File Index Website</title>
+    <title>Movie Downloader</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My File Index</h1>
-        <p>Search for files from your Telegram links</p>
-    </header>
-
-    <!-- Search Bar -->
-    <div id="search-container">
-        <input type="text" id="search-box" placeholder="Search files..." onkeyup="searchFiles()">
-    </div>
-
-    <!-- File List -->
-    <div id="file-list">
-        <ul id="files">
-            <!-- Files will be listed here dynamically -->
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="#">MovieZilla</a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Top Movies</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Download Latest Movies in HD</h1>
+            <p>Explore a wide range of movies and download them for free!</p>
+            <a href="#movie-list" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Movie List Section -->
+    <section id="movie-list" class="movie-list">
+        <h2>Featured Movies</h2>
+        <div class="movie-container">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <img src="assets/movie1.jpg" alt="Movie 1">
+                <div class="movie-info">
+                    <h3>Movie Title 1</h3>
+                    <p>Genre: Action | Size: 500 MB</p>
+                    <a href="https://example.com/movie1" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <!-- Movie Card 2 -->
+            <div class="movie-card">
+                <img src="assets/movie2.jpg" alt="Movie 2">
+                <div class="movie-info">
+                    <h3>Movie Title 2</h3>
+                    <p>Genre: Comedy | Size: 700 MB</p>
+                    <a href="https://example.com/movie2" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <img src="assets/movie3.jpg" alt="Movie 3">
+                <div class="movie-info">
+                    <h3>Movie Title 3</h3>
+                    <p>Genre: Drama | Size: 1 GB</p>
+                    <a href="https://example.com/movie3" class="download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>Created with ❤️ by Your Name</p>
+        <p>&copy; 2025 MovieZilla | All Rights Reserved</p>
     </footer>
 
-    <script src="search.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
